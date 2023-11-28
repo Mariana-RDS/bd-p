@@ -5,3 +5,13 @@ delete_rows(
     table_name = 'tabela',
     query = 'age = 24'
 )
+
+##############################################################
+
+from functions.insert_row import insert_many_rows
+
+insert_many_rows(
+    'test.db', 'tabela',
+    'id, name, age',
+    [(13, "Marta", 10)]
+)
